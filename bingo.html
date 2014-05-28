@@ -14,6 +14,7 @@
 			}
 		
 			td {
+				padding: 5px;
 				width: 20%;
 				height:75px;
 				border:1px solid #000000;
@@ -56,7 +57,7 @@
                 '4.7" iPhone',
                 '5" iPhone',
                 '13" iPad',
-                'Mac OS X Geese',
+                'Mac OS X Geese (10.10)',
                 'Siri SDK',
                 'Revolutionary',
                 'Beats Demo',
@@ -66,11 +67,19 @@
                 'Eddy Cue\'s shirt is not camera friendly',
                 'Android mentioned',
                 'Infinity Blade',
-                'Eddy Cue\'s shirt not tucked in'];
+                'Eddy Cue\'s shirt not tucked in',
+                '64-Bit only Mac App Store',
+                'Mac OS X follows iOS UI styling',
+                'Smart Home',
+                'Retina MacBook Air'];
                 
 		var col = [0,0,1,0,0];
 		
 		var row = [0,0,1,0,0];
+		
+		var downDialognal = 1;
+		
+		var upDialognal = 1;
 		
 		//via http://stackoverflow.com/a/12646864/806442
 		function shuffleArray(array) {
@@ -122,19 +131,28 @@
 					$(this).addClass('on');
 					var id = $(this).attr('id').substring(1);
 				
+					var winner = 0;
+					
 					var currentRow = Math.floor(id / 5);
 				
 					row[currentRow]++;
-				
-					if (row[currentRow] >= 5) {
-						$('#winner').removeClass('hidden');	
-					}
 					
 					var currentCol = id % 5;
 				
 					col[currentCol]++;
-				
-					if (col[currentCol] >= 5) {
+					
+					if (currentRow == currentCol) {
+						downDialognal++;
+					}
+					
+					if ((currentRow + currentCol) == 4) {
+						upDialognal++;
+					}
+					
+					if ((row[currentRow] >= 5)
+						|| (col[currentCol] >= 5)
+						|| (downDialognal >= 5)
+						|| (upDialognal >= 5)){
 						$('#winner').removeClass('hidden');	
 					}
 				}
@@ -146,7 +164,7 @@
 	<body>
 		<h1>WWDC Bingo</h1>
 		<div id="winner" class="hidden">
-			WINNER!
+			BINGO!
 		</div>
 		<table id="bingo-card">
 
@@ -155,7 +173,7 @@
 		<h2>How to play</h2>
 		<ul>
 			<li>As you're watching the WWDC keynote, mark off the events listed in your card as they happen.</li>
-			<li>If you're the first person to get 5 in a row horizontally, diagonally or vertically wins.</li>
+			<li>If you're the first person to get 5 in a row horizontally, diagonally or vertically you win.</li>
 			<li>The middle square is free.</li>
 			<li>Reload to get a new card. There are currently <span id="square-count"></span> possible values.</li>
 		</ul>
