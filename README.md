@@ -19,4 +19,4 @@ Karl Monaghan
 
 ## License
 
-WDCBingo is available under the MIT license. See the LICENSE file for more info.
+WWDCBingo is available under the MIT license. See the LICENSE file for more info.
