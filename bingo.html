@@ -158,6 +158,15 @@
 					}
 				}
 			});
+			
+			$('#showall').click(function(){
+				var squarelist = $('#squares');
+				var total = squares.length;
+				
+				for (var i = 0; i < total; i++) { 
+					squarelist.append('<p>' + squares[i] + '</p>');
+				};
+			});
 		});
 	</script>
 
@@ -178,6 +187,10 @@
 			<li>The middle square is free.</li>
 			<li>Reload to get a new card. There are currently <span id="square-count"></span> possible values.</li>
 		</ul>
+		<a id="showall">Show all values</a>
+		<div id="squares">
+		
+		</div>
 		<p>By <a href="http://www.karlmonaghan.com/">Karl Monaghan</a> &nbsp;|&nbsp;Inspired by by <a href="https://www.cocoacontrols.com/posts/wwdc-2013-bingo">WWDC 2013 Bingo</a>&nbsp;|&nbsp;<a href="http://www.karlmonaghan.com/contact">Get in touch</a>&nbsp;|&nbsp;<a href="https://gist.github.com/kmonaghan/ba869be6f8f65429323f">Code</a></p>
 	</body>
 </html>
