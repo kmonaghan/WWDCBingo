@@ -94,7 +94,9 @@
                 'OS X running on Arm64',
                 'It\'s that easy',
                 'It just works',
-                'Phil Schiller reads off a list of specifications'];
+                'Phil Schiller reads off a list of specifications',
+                'iOS adoption chart',
+                'Retina Cinema Display'];
                 
 		var col = [0,0,1,0,0];
 		
@@ -118,7 +120,7 @@
 		$(document).ready(function() {
 			shuffleArray(squares);
 			
-			$('#square-count').text(squares.length);
+			$('#showall').text(squares.length);
 			
 			var card = $('#bingo-card');
 			var count = 0;
@@ -187,7 +189,7 @@
 				
 				for (var i = 0; i < total; i++) { 
 					squarelist.append('<p>' + squares[i] + '</p>');
-				};
+				};	
 			});
 		});
 	</script>
@@ -207,12 +209,14 @@
 			<li>As you're watching the WWDC keynote, mark off the events listed in your card as they happen.</li>
 			<li>If you're the first person to get 5 in a row horizontally, diagonally or vertically you win.</li>
 			<li>The middle square is free.</li>
-			<li>Reload to get a new card. There are currently <span id="square-count"></span> possible values.</li>
+			<li>Reload to get a new card. There are currently <a id="showall" href="#showall"></a> possible values.</li>
 		</ul>
-		<a id="showall">Show all values</a>
-		<div id="squares">
 		
+		<a name="showall"></a>
+		<div id="squares">
+			
 		</div>
+
 		<p>By <a href="http://www.karlmonaghan.com/">Karl Monaghan</a> &nbsp;|&nbsp;Inspired by by <a href="https://www.cocoacontrols.com/posts/wwdc-2013-bingo">WWDC 2013 Bingo</a>&nbsp;|&nbsp;<a href="http://www.karlmonaghan.com/contact">Get in touch</a>&nbsp;|&nbsp;<a href="https://gist.github.com/kmonaghan/ba869be6f8f65429323f">Code</a></p>
 	</body>
 </html>
