@@ -44,4 +44,5 @@ var squares = ['We\'re taking it to the next level',
                 'U2',
                 'micropayments',
                 'non-watch wearables',
-                'wearable micropants'];
+                'wearable micropants',
+                'Super retina (@3x)',];
