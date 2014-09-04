@@ -49,4 +49,8 @@ var squares = ['We\'re taking it to the next level',
                 'American Express',
                 'Visa',
                 'Mastercard',
-                'Lightning connector headphones'];
+                'Lightning connector headphones',
+                'An actual Apple TV set',
+                'iFitband',
+                'Apple branded iPhone covers',
+                'iHealth',];
