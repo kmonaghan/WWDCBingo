@@ -53,4 +53,5 @@ var squares = ['We\'re taking it to the next level',
                 'An actual Apple TV set',
                 'iFitband',
                 'Apple branded iPhone covers',
-                'iHealth',];
+                'iHealth',
+                '128gb iPhone',];
