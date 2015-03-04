@@ -28,4 +28,5 @@ var squares = ['We\'re taking it to the next level',
                 'Craig Federighi on stage',
                 'ApplePay',
                 '14+ hour battery life',
-                'MacBook Air Retina'];
+                'MacBook Air Retina',
+                'It feels great on your wrist'];
