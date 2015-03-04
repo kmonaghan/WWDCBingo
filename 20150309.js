@@ -25,4 +25,7 @@ var squares = ['We\'re taking it to the next level',
                 'Phil Schiller reads off a list of specifications',
                 'NFC',
                 'U2',
-                'Craig Federighi on stage',];
+                'Craig Federighi on stage',
+                'ApplePay',
+                '14+ hour battery life',
+                'MacBook Air Retina'];
