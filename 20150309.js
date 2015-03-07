@@ -29,4 +29,11 @@ var squares = ['We\'re taking it to the next level',
                 'ApplePay',
                 '14+ hour battery life',
                 'MacBook Air Retina',
-                'It feels great on your wrist'];
+                'It feels great on your wrist',
+		'Apple Watch Edition starts at $10,000+',
+		'Water resistant',
+		'Under 4 hours for a full charge',
+		'Heart rate monitor',
+		'8GB onboard storage',
+		'Isn\'t it just gorgeous?',
+		'Painfully unfunny "comedy" segment'];
