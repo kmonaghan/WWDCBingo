@@ -50,4 +50,7 @@ var squares = ['We\'re taking it to the next level',
                 'Painfully unfunny "comedy" segment',
                 'Isn\'t it just gorgeous?',
                 'iPad Pro',
-                'San Francisco font across iOS and OS X'];
+                'San Francisco font across iOS and OS X',
+                'Apple Watch Sales Update',
+                'Apple Exec \'Amazed\' at customer response to product',
+                'Tim Cook opens with "So, the Christy Turlington Burns blog. What was that about?"'];
